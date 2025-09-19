@@ -54,10 +54,17 @@
             //    Console.WriteLine(str);
             //}
             //Задание 6
+            //int n = Convert.ToInt32(Console.ReadLine());
+            //for (int i = 0; i < n + 1; i++)
+            //{
+            //    Console.WriteLine($"Квадрат числа {i} равен {i * i}");
+            //}
+            //Задание 7
+            string str = Console.ReadLine();
             int n = Convert.ToInt32(Console.ReadLine());
-            for (int i = 0; i < n + 1; i++)
+            for (int i = 0; i < n; i++)
             {
-                Console.WriteLine($"Квадрат числа {i} равен {i * i}");
+                Console.WriteLine(str);
             }
         }
     }   
