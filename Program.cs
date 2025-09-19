@@ -48,10 +48,16 @@
             //    Console.WriteLine($"5 * {i} = {i * 5}");
             //}
             //Задание 5
-            string str = "Запомни: всего одна ошибка и ты ошибся";
-            for (int i = 0; i < 10; i++)
+            //string str = "Запомни: всего одна ошибка и ты ошибся";
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    Console.WriteLine(str);
+            //}
+            //Задание 6
+            int n = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < n + 1; i++)
             {
-                Console.WriteLine(str);
+                Console.WriteLine($"Квадрат числа {i} равен {i * i}");
             }
         }
     }   
