@@ -67,15 +67,30 @@
             //    Console.WriteLine(str);
             //}
             //Задание 8
-            bool res = true;
-            for (int i = 0; i < 10; i++)
+            //bool res = true;
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    int num = Convert.ToInt32(Console.ReadLine());
+            //    if (num % 2 != 0) { res = false; }
+            //}
+            //if (res == false) { Console.WriteLine("No"); }
+            //else { Console.WriteLine("YES"); }
+            //Задание 9
+            Console.WriteLine("Добро пожаловать на стрельбище.");
+            Console.WriteLine("Введить Стоп чтобы прекратить стрельбу");
+            for (int i = 0; ; i++)
             {
-                int num = Convert.ToInt32(Console.ReadLine());
-                if (num % 2 != 0) { res = false; }
-            }
-            if (res == false) { Console.WriteLine("No"); }
-            else { Console.WriteLine("YES"); }
+                Console.Write("Нажмите Enter чтобы выстрелить: ");
+                string test = Console.ReadLine();
+                if (test == "Стоп")
+                {
+                    Console.WriteLine("Стрельба завершина.");
+                    Console.WriteLine($"Израсходованно боеприпассов: {i}");
+                    break;
+                }
+                else { Console.WriteLine("Выстрел совершён."); }
 
+            }
         }
     }   
 }
