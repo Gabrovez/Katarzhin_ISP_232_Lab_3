@@ -37,9 +37,15 @@
             //            break;
             //    }
             //Задание 3
-            for (int i = 10; i > 0; i--)
+            //for (int i = 10; i > 0; i--)
+            //{
+            //    Console.WriteLine(i);
+            //}
+            //Задание 4
+            int num = 5;
+            for (int i = 1; i < 11; i++)
             {
-                Console.WriteLine(i);
+                Console.WriteLine($"5 * {i} = {i * 5}");
             }
         }
     }   
