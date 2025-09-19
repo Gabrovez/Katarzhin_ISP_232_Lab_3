@@ -42,10 +42,16 @@
             //    Console.WriteLine(i);
             //}
             //Задание 4
-            int num = 5;
-            for (int i = 1; i < 11; i++)
+            //int num = 5;
+            //for (int i = 1; i < 11; i++)
+            //{
+            //    Console.WriteLine($"5 * {i} = {i * 5}");
+            //}
+            //Задание 5
+            string str = "Запомни: всего одна ошибка и ты ошибся";
+            for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine($"5 * {i} = {i * 5}");
+                Console.WriteLine(str);
             }
         }
     }   
