@@ -60,12 +60,22 @@
             //    Console.WriteLine($"Квадрат числа {i} равен {i * i}");
             //}
             //Задание 7
-            string str = Console.ReadLine();
-            int n = Convert.ToInt32(Console.ReadLine());
-            for (int i = 0; i < n; i++)
+            //string str = Console.ReadLine();
+            //int n = Convert.ToInt32(Console.ReadLine());
+            //for (int i = 0; i < n; i++)
+            //{
+            //    Console.WriteLine(str);
+            //}
+            //Задание 8
+            bool res = true;
+            for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine(str);
+                int num = Convert.ToInt32(Console.ReadLine());
+                if (num % 2 != 0) { res = false; }
             }
+            if (res == false) { Console.WriteLine("No"); }
+            else { Console.WriteLine("YES"); }
+
         }
     }   
 }
