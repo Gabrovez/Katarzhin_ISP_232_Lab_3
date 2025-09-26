@@ -95,12 +95,20 @@
             //Console.WriteLine(Environment.OSVersion.VersionString);
             //Console.WriteLine("Namespace: {0}", typeof(Program).Namespace ?? "<null>");
             // Цикл for
-            int sum = 0;
-            for (int i = 1; i < 10; i++)
+            //int sum = 0;
+            //for (int i = 1; i < 10; i++)
+            //{
+            //    sum += i;
+            //}
+            //Console.WriteLine($"Сумма: {sum}");
+            // Цикл do..while
+            int i = 10;
+            do
             {
-                sum += i;
+                Console.WriteLine(i);
+                i--;
             }
-            Console.WriteLine($"Сумма: {sum}");
+            while (i > 0);
         }
     }   
 }
