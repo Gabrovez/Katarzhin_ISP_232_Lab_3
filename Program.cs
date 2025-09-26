@@ -95,11 +95,9 @@
             //Console.WriteLine(Environment.OSVersion.VersionString);
             //Console.WriteLine("Namespace: {0}", typeof(Program).Namespace ?? "<null>");
             // Цикл for
-            int i = 1;
-            for (;;)
+            for (int i = 1, j = 1; i < 10; i++, j++)
             {
-                Console.WriteLine($"i = {i}");
-                i++;
+                Console.WriteLine($"{i * j}");
             }
 
         }
