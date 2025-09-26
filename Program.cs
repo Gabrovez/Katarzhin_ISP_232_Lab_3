@@ -110,13 +110,17 @@
             //}
             //while (i > 0);
             // Цикл while
-            int i = 10;
-            while(i > 0)
+            //int i = 10;
+            //while(i > 0)
+            //{
+            //    Console.WriteLine(i);
+            //    i--;
+            //}
+            //Цикл foreach
+            foreach (char i in "Hello world")
             {
                 Console.WriteLine(i);
-                i--;
             }
-
         }
     }   
 }
