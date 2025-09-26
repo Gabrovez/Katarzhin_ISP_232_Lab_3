@@ -2,16 +2,18 @@
 {
     public class Program
     {
-        enum DayOfWeek
-        {
-            Monday,
-            Tuesday,
-            Wednesday,
-            Thursday,
-            Friday,
-            Saturday,
-            Sunday
-        }
+        enum Hero { Воин, Маг, Вор }
+        enum TimeOfDay { Утро, День, Вечер, Ночь }
+        //enum DayOfWeek
+        //{
+        //    Monday,
+        //    Tuesday,
+        //    Wednesday,
+        //    Thursday,
+        //    Friday,
+        //    Saturday,
+        //    Sunday
+        //}
         //enum TaskPriority
         //{
         //    low = 1,
@@ -137,18 +139,71 @@
             //Console.WriteLine(today); 
             //TaskPriority priority = TaskPriority.high;
             //Console.WriteLine((int)priority);
-            DayOfWeek day = DayOfWeek.Saturday;
-            switch (day)
+            //DayOfWeek day = DayOfWeek.Saturday;
+            //switch (day)
+            //{
+            //    case DayOfWeek.Saturday:
+            //    case DayOfWeek.Sunday:
+            //        Console.WriteLine("Выходной!");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Будний день.");
+            //        break;
+            //}
+            //Шаг 10. Мини-проект
+            var times = Enum.GetValues(typeof(TimeOfDay));
+            var heroes = Enum.GetValues(typeof(Hero));
+            for (int i = 0; i < times.Length; i++)
             {
-                case DayOfWeek.Saturday:
-                case DayOfWeek.Sunday:
-                    Console.WriteLine("Выходной!");
-                    break;
-                default:
-                    Console.WriteLine("Будний день.");
-                    break;
-            }
+                TimeOfDay time = (TimeOfDay)times.GetValue(i);
+                Console.Write($"\nВремя сейчас {time}:\n");
 
+                for (int j = 0; j < heroes.Length; j++)
+                {
+                    Hero h = (Hero)heroes.GetValue(j);
+                    Console.Write($"{h} - ");
+
+                    switch (time)
+                    {
+                        case TimeOfDay.Утро:
+                            Console.WriteLine(h switch
+                            {
+                                Hero.Воин => "делает зарядку c  мечом ",
+                                Hero.Маг => "заваривает зелья",
+                                Hero.Вор => "крадётся по базару",
+                                _ => "ничего не делает "
+                            });
+                            break;
+                        case TimeOfDay.День:
+                            Console.WriteLine(h switch
+                            {
+                                Hero.Воин => "тренируется на арене",
+                                Hero.Маг => "изучает древние книги",
+                                 Hero.Вор => "прячется в тенях",
+                                _ => "ничего не делает "
+                            });
+                            break;
+                        case TimeOfDay.Вечер:
+                            Console.WriteLine(h switch
+                            {
+                                Hero.Воин => "ест мясо у костра",
+                                Hero.Маг => "создаёт магический щит",
+                                Hero.Вор => "планирует налет",
+                                _ => "ничего не делает "
+                            });
+                            break;
+                        case TimeOfDay.Ночь:
+                            Console.WriteLine(h switch
+                            {
+                                Hero.Воин => "спит в палатке",
+                                Hero.Маг => "медитирует под луной",
+                                Hero.Вор => "лезет в чужой дом",
+                                _ => "ничего не делает "
+                            });
+                            break;
+                    }
+                }
+            }
         }
     }
 }
