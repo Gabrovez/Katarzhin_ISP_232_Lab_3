@@ -122,12 +122,29 @@
             //    Console.WriteLine(i);
             //}
             //Операторы continue и break
-            for (int i =0; i < 9; i++) 
+            //for (int i =0; i < 9; i++) 
+            //{
+            //    if (i == 5)  
+            //        break; 
+            //    Console.WriteLine(i);
+            //}
+            //Шаг 8. Эхо-чат
+            string? input;
+            while (true)
             {
-                if (i == 5)  
-                    break; 
-                Console.WriteLine(i);
+                Console.Write("> ");
+                input = Console.ReadLine();
+                if (input == null)
+                {
+                    continue;
+                }
+                if (input.ToLower() == "выход")
+                {
+                    Console.WriteLine("До встречи!");
+                    break;
+                }
             }
+            Console.WriteLine($"Вы сказали: {input}");
         }
     }   
 }
