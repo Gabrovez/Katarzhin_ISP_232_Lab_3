@@ -117,8 +117,15 @@
             //    i--;
             //}
             //Цикл foreach
-            foreach (char i in "Hello world")
+            //foreach (char i in "Hello world")
+            //{
+            //    Console.WriteLine(i);
+            //}
+            //Операторы continue и break
+            for (int i =0; i < 9; i++) 
             {
+                if (i == 5)  
+                    break; 
                 Console.WriteLine(i);
             }
         }
