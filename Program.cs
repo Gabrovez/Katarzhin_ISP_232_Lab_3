@@ -102,13 +102,21 @@
             //}
             //Console.WriteLine($"Сумма: {sum}");
             // Цикл do..while
+            //int i = 10;
+            //do
+            //{
+            //    Console.WriteLine(i);
+            //    i--;
+            //}
+            //while (i > 0);
+            // Цикл while
             int i = 10;
-            do
+            while(i > 0)
             {
                 Console.WriteLine(i);
                 i--;
             }
-            while (i > 0);
+
         }
     }   
 }
