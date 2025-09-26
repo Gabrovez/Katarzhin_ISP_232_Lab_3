@@ -91,9 +91,14 @@
             //    else { Console.WriteLine("Выстрел совершён."); }
 
             //}
-            Console.WriteLine(Environment.CurrentDirectory);
-            Console.WriteLine(Environment.OSVersion.VersionString);
-            Console.WriteLine("Namespace: {0}", typeof(Program).Namespace ?? "<null>");
+            //Console.WriteLine(Environment.CurrentDirectory);
+            //Console.WriteLine(Environment.OSVersion.VersionString);
+            //Console.WriteLine("Namespace: {0}", typeof(Program).Namespace ?? "<null>");
+            // Цикл for
+            for (int i =1; i<10; i++)
+            {
+                Console.WriteLine(i);
+            }
 
         }
     }   
