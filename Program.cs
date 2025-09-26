@@ -12,6 +12,12 @@
             Saturday,
             Sunday
         }
+        enum TaskPriority
+        {
+            low = 1,
+            Medium =2,
+            high = 3
+        }
         //enum TrafficLight { Red, Yellow, Green }
         //public enum OrderStatus { New, Processing, Shipped, Delivered };
         static void Main(string[] args)
@@ -127,8 +133,10 @@
             //}
             //Console.WriteLine($"Вы сказали: {input}");
             //Шаг 9. Перечисления
-            DayOfWeek today = DayOfWeek.Friday;
-            Console.WriteLine(today); // Выведет "Friday"
+            //DayOfWeek today = DayOfWeek.Friday;
+            //Console.WriteLine(today); 
+            TaskPriority priority = TaskPriority.high;
+            Console.WriteLine((int)priority);
 
         }
     }
